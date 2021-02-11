@@ -1,0 +1,246 @@
+body, html {
+    height: 100%;
+    margin-bottom: 100px;
+    background-color: #000;
+}
+
+
+.parallax {
+    background-color: #fefefe;
+    background-image: url('bg2.jpg');
+
+    height: 20cm;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-curtain {
+    background-color: rgba(0, 0, 0);
+}
+
+
+form {
+    font-family: gg;
+}
+
+
+button {
+    background-color: rgb(55, 62, 68);
+    border: none;
+    padding: 16px 20px;
+    color: white;
+    font-family: anu;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0, 300px);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+button:hover {
+    box-shadow: 4px 4px 30px white, -4px -4px 30px white;
+    padding: 16px 100px;
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+select {
+    padding: 10px 20px;
+    font-family: gg;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+option[value="Berlin"] {
+    color: green;
+}
+
+option[value="New Delhi"] {
+    color: burlywood;
+}
+
+option[value="Mumbai"] {
+    color:coral;
+}
+
+option[value="New York"] {
+    color:darkslategray;
+}
+
+option[value="Pune"] {
+    color:darkmagenta;
+}
+
+option[value="Kolkata"] {
+    color:lawngreen;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animationtop;
+    -webkit-animation-duration: 500ms;
+    animation-name: animationtop;
+    animation-duration: 500ms;
+}
+
+
+@-webkit-keyframes animationtop {
+    from { top: -300px; opacity: 0; }
+    to { top: 0; opacity: 0.2; }
+}
+
+
+@keyframes animationtop {
+    from { top: -300px; opacity: 0; }
+    to { top: 0; opacity: 2; }
+}
+
+
+.close {
+    color: white;
+    float: right;
+    padding: 2px 15px;
+    transform: translate(16px, -9.5px);
+    font-size: 30px;
+    font-weight: normal;
+    transition: 500ms;
+}
+
+
+.style {
+    font-family: anu;
+    font-size: 150px;
+    text-align: center;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: red;
+}
+
+
+.modal-header {
+    padding: 10px 16px;
+    background-color: #000;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: gl;
+}
+
+
+.chf {
+    font-family: Phg;
+}
+
+
+.modal-body {
+    padding: 2px 20px;
+    background-color: rgba(0, 255, 255, 0.5);
+    font-family: gg;
+    font-size: 30px;
+}
+
+input {
+    margin-bottom: 2%;
+    font-family: gg;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+input[type=radio] {
+    transform: matrix(2, 0, 0, 2, -14, -5);
+    margin-left: 1cm;
+}
+
+input[type=submit] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2cm;
+    padding: 10px 50px;
+    font-family: exan;
+    font-size: 40px;
+    background-color: rgb(224, 223, 209);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(73, 99, 22);
+    color: white;
+    padding: 10px 80px;
+}
+
+
+.align {
+    margin-bottom: 2cm;
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: gl;
+    src: url('Cracked Code.ttf');
+}
+
+@font-face {
+    font-family: gl2;
+    src: url('Bad Coma.ttf');
+}
+
+@font-face {
+    font-family: exan;
+    src: url('Exan-Regular.ttf');
+}
+
+@font-face {
+    font-family: Phg;
+    src: url('Phage Rough.otf');
+}
+
+@font-face {
+    font-family: anu;
+    src: url('Anurati-Regular.otf');
+}
+
+@font-face {
+    font-family: gg;
+    src: url('fonts/BattleOfKings-Regular.ttf');
+}

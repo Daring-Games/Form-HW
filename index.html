@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>
+                REGISTER NOW
+            </title>
+        </head>
+        <link rel="stylesheet" href="style.css">
+        <body>
+
+            <p style="color: whitesmoke;" class="style">COOL GAMES</p>
+            
+            <div class="parallax"></div>
+
+            <div style="height:700px;" class="parallax-curtain">
+                <button id="btn">REGISTER NOW</button>
+
+                <div id="newModal" class="modal">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <p>
+                                REGISTER
+                            </p>
+                        </div>
+                        <div class="modal-body">
+                            <p class="align">Welcome to Cool Games: Home of the world's BEST games</p>
+                            Name: <input type="text" placeholder="name"><br>
+                            Age: <input type="number" placeholder="age" min="13" max="30">
+                            Gender: <input type="radio" value="male" name="male">Male
+                            <input type="radio" value="female" name="female">Female<br>
+                            Your Mobile Number: <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> (optional)<br>
+                            Your email: <input type="email" placeholder="your-email@email.com" required><br>
+                            <label for="city">Your city: </label>
+                                <select id="cities" name="city">
+                                    <option value="New Delhi">New Delhi</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Kolkata">Kolkata</option>
+                                    <option value="New York">New York</option>
+                                    <option value="London">London</option>
+                                    <option value="Berlin">Berlin</option>
+                                </select><br>
+                            <input type="submit">
+                        </div>
+                    </div>  
+
+                </div>
+                
+            </div>
+
+
+            <div class="parallax"></div>
+
+            <script src="index.js"></script>
+        </body>
+    </html>
